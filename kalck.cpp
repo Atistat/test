@@ -42,3 +42,30 @@ int main()
 }
 
 
+№2
+
+
+
+#include<iostream>
+
+using namespace std;
+
+
+int main() {
+    int space = 0;
+    char find = ' ';
+    string str;
+    
+    cout << "Введите строку ";
+    getline(cin,str);
+    
+    for (int i = 0; i < str.size(); i++) {
+        if (str[i] == find) {
+            space++;
+        }
+    }
+    cout << endl;
+    cout << "Количество пробелов:" << space;
+    return 0;
+}
+ 
